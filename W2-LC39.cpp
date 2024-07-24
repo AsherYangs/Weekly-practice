@@ -3,7 +3,7 @@ public:
     vector<vector<int>> ans;
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
         //use dfs, and set to mark nums if already visit (like graph.)
-        sort(candidates.begin(),candidates.end()); /* 排序因為只往後搜索 */
+        sort(candidates.begin(),candidates.end()); /* 排序因為只從小到大搜索 */
         vector<int> temp;
         findSum(candidates, temp, target);
         return ans;
